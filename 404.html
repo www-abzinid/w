@@ -48,12 +48,14 @@
   </header>
   <main role="main" class="inner cover">
     <h1 class="cover-heading">Hello</h1>
-    <p class="lead">this we site is maintainance right now, 
+    <p class="lead">this web site is maintainance right now, 
       we will back after fifteen mintues.</p>
     <p class="lead"><span class="mbtn" id="w1"></span></p>
     <br/>
-    <p class="lead">visit our this blog <a href=https://link2app.blogspot.com" title="app link"><u>App Link</u></a></p>
-    <p class="lead">Or join us on telegram</p>
+    <p class="lead">visit this blog </p>
+     <p class="lead"><a href=https://link2app.blogspot.com" rel="nofollow" title="app link" class="btn btn-lg btn-secondary"><u>App Link</u></a></p>
+    <p class="lead">Or</p> 
+       <p class="lead">join us on telegram</p>
     <p class="lead"></p>
     <p class="lead">
       <a href="https://t.me/joinchat/AAAAAEZV2Wo_A9vCbE_hgw" title="telegram" class="btn btn-lg btn-secondary">join telegram</a>
@@ -73,16 +75,16 @@ var countDownDate = new Date("May 02, 2019 14:00:00").getTime();
 var x = setInterval(function() {
     var now = new Date().getTime();
     var distance = countDownDate - now;
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 for (var i = 0; i < ids.length; i++) {
-    document.getElementById(ids[i]).innerHTML = days + " day " + hours + ":"
+    document.getElementById(ids[i]).innerHTML = 00 + ":" 00 + ":" hours + ":"
     + minutes + ":" + seconds + "s ";
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById(ids[i]).innerHTML = "Oops! 00:00:00";
+        document.getElementById(ids[i]).innerHTML = "Now we are online! 00:00:00";
     }
   }
 }, 1000);
