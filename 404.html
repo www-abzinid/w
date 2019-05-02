@@ -19,7 +19,14 @@
         -ms-user-select: none;
         user-select: none;
       }
-
+  .mbtn {
+ 	color: #00ff00;
+ 	font-size: 13px;
+ 	background: #d30c0c;
+ 	padding: 2px 6px;
+ 	border-radius: 4px;
+ 	box-shadow: 0 1px 0 rgba(0, 0, 0, .15);
+ }
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
@@ -39,11 +46,11 @@
       </nav>
     </div>
   </header>
-
   <main role="main" class="inner cover">
     <h1 class="cover-heading">Hello</h1>
     <p class="lead">this we site is maintainance right now, 
       we will back after fifteen mintues.</p>
+    <p class="lead"><span class="mbtn" id="w1"></span></p>
     <br/>
     <p class="lead">visit our this blog <a href=https://link2app.blogspot.com" title="app link"><u>App Link</u></a></p>
     <p class="lead">Or join us on telegram</p>
@@ -60,5 +67,25 @@
     </div>
   </footer>
 </div>
+  <script>
+var ids = ['w1','w2','w3','w4'];
+var countDownDate = new Date("May 02, 2019 14:00:00").getTime();
+var x = setInterval(function() {
+    var now = new Date().getTime();
+    var distance = countDownDate - now;
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+for (var i = 0; i < ids.length; i++) {
+    document.getElementById(ids[i]).innerHTML = days + " day " + hours + ":"
+    + minutes + ":" + seconds + "s ";
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById(ids[i]).innerHTML = "Oops! 00:00:00";
+    }
+  }
+}, 1000);
+</script>
 </body>
 </html>
