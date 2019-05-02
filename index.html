@@ -52,8 +52,8 @@
       we will back after fifteen mintues.</p>
     <p class="lead"><span class="mbtn" id="w1"></span></p>
     <br/>
-    <p class="lead">visit our this blog </p>
-     <p class="lead"><a href=https://link2app.blogspot.com" rel="nofollow" title="app link"><u>App Link</u></a></p>
+    <p class="lead">visit this blog </p>
+     <p class="lead"><a href=https://link2app.blogspot.com" rel="nofollow" title="app link" class="btn btn-lg btn-secondary"><u>App Link</u></a></p>
     <p class="lead">Or</p> 
        <p class="lead">join us on telegram</p>
     <p class="lead"></p>
@@ -80,11 +80,11 @@ var x = setInterval(function() {
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 for (var i = 0; i < ids.length; i++) {
-    document.getElementById(ids[i]).innerHTML = 00: + " 00: " + hours + ":"
+    document.getElementById(ids[i]).innerHTML = 00 + ":" 00 + ":" hours + ":"
     + minutes + ":" + seconds + "s ";
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById(ids[i]).innerHTML = "Oops! 00:00:00";
+        document.getElementById(ids[i]).innerHTML = "Now we are online! 00:00:00";
     }
   }
 }, 1000);
